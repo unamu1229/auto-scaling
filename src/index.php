@@ -1,7 +1,9 @@
 <?php
-$counter = 0;
-for ($i = 0; $i < 1000000000; $i++) {
+$counter = time();
+for ($i = 0; $i < 100000000; $i++) {
     $counter += $i;
 }
 
-echo "hello world{$counter}";
+$hash = md5($counter);
+
+echo "hello world {$hash}";
