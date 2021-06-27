@@ -11,4 +11,4 @@ services:
     build: ./php-fpm
     volumes:
       - ./src:/var/www/html
-      - ./php-fpm/www.conf:/usr/local/etc/php-fpm.d/www.conf
+      - ./php-fpm/php.ini:/usr/local/etc/php/conf.d/php.ini
